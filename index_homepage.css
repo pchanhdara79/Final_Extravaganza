@@ -1,16 +1,6 @@
-/* HOMEPAGE-ONLY STYLES: index_homepage.css */
-
-/* Center main heading */
-/* Treasure Trove header using Sloop Script One Bold */
-header h1 {
-    font-family: "sloop-script-one", sans-serif;
-    font-weight: 700; 
-    font-style: normal; 
-    color: #0E2D30;
-    text-align: center;
-    font-size: 75px; /* increase this value as desired */
-    margin-top: 20px; /* keeps original spacing */
-}
+/* ========================
+   HOMEPAGE-ONLY STYLES: index_homepage.css
+========================= */
 
 /* Hero Section */
 .hero {

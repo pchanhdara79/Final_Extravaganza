@@ -1,4 +1,6 @@
-/* GLOBAL STYLES: styles.css */
+/* ========================
+   GLOBAL STYLES: styles.css
+========================= */
 
 /* Adobe font for headers */
 h1, h2, h3, h4, h5, h6 {
@@ -25,8 +27,7 @@ body {
 .page-container {
     max-width: 1200px; /* controls the width of your content */
     margin: 0 auto;    /* centers content horizontally */
-    background-color: #f7f4f3; /* main page background */
-    /* optional padding inside the content */
+    background-color: #f7f4f3; /* main page background (creme) */
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -35,15 +36,18 @@ body {
 header {
     background-color: #f7f4f3; /* Treasure Trove background */
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Apply Sloop Script to Treasure Trove header */
 header h1 {
-    font-family: "sloop-script", serif; /* make sure the name matches the one Adobe Fonts uses */
-    color: #0E2D30; /* your chosen Treasure Trove text color */
+    font-family: "sloop-script-one", sans-serif; /* Adobe font */
+    font-weight: 700; 
+    font-style: normal; 
+    color: #0E2D30;
     text-align: center;
-    font-size: 48px;
-    margin-top: 20px;
+    font-size: 75px; /* larger font without affecting margins */
+    margin-top: 20px; /* keeps original spacing */
 }
 
 /* Header tagline bar */
@@ -56,7 +60,7 @@ header p {
 
 /* Global Navigation */
 nav {
-    background-color: #3D0E12;
+    background-color: #3D0E12; /* full-width nav */
     padding: 20px 0;
 }
 
@@ -83,8 +87,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: #3D0E12;
-    color: #A7CADF;
+    background-color: #3D0E12; /* full-width footer */
     text-align: center;
     padding: 20px 0;
     margin-top: 60px;

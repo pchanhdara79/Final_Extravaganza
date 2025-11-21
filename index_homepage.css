@@ -1,144 +1,52 @@
-/* -------------------- */
-/* Base Typography      */
-/* -------------------- */
+/* HOMEPAGE-ONLY STYLES: index_homepage.css */
 
-body {
-    font-family: "ratio-modern", serif;
-    background-color: #180808;
-    color: #A7CADF;
-    margin: 0;
-}
-
-/* Paragraphs use Garamond */
-p {
-    font-family: "EB Garamond", serif;
-    font-size: 18px;
-    line-height: 28px;
-    color: #A7CADF;
-}
-
-/* -------------------- */
-/* Header               */
-/* -------------------- */
-
+/* Center main heading */
 header h1 {
     text-align: center;
-    color: #A7CADF;
-    font-family: "ratio-modern", serif;
     font-size: 48px;
+    color: #A7CADF;
+    margin-top: 20px;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 350px; /* Replace with your real hero img */
+    background-color: #3D0E12;
     margin: 20px 0;
 }
 
-/* Tagline under hero */
-header p {
-    background-color: #A7CADF;
-    color: #180808;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 20px;
-    margin: 0;
-    line-height: 26px;
-}
-
-/* -------------------- */
-/* Navigation           */
-/* -------------------- */
-
-nav {
-    background-color: #4F0208;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-}
-
-nav a {
-    color: #A7CADF;
-    text-decoration: none;
-    padding: 15px;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-nav a:hover {
-    background-color: #EEBCC2;
-    color: #180808;
-}
-
-/* -------------------- */
-/* Headings             */
-/* -------------------- */
-
-h2 {
-    color: #3D0E12;
+/* Section Headings */
+h2, h3, h4 {
     text-align: center;
     margin-top: 40px;
-    font-size: 36px;
-}
-
-h3 {
     color: #3D0E12;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 28px;
 }
 
-h4 {
-    color: #3D0E12;
-    margin-top: 20px;
-    font-size: 22px;
-}
-
-/* -------------------- */
-/* Cards & Grids        */
-/* -------------------- */
-
-.card {
-    border: 4px solid #4F0208;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #180808;
-}
-
+/* Featured Categories Grid */
 .featured-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     width: 90%;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
 }
 
+/* Cards */
+.card {
+    border: 4px solid #4F0208;
+    background-color: #180808;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #A7CADF;
+}
+
+/* Latest Addition */
 .latest-grid {
     display: flex;
     justify-content: center;
     gap: 30px;
     width: 90%;
     margin: 0 auto;
-}
-
-/* -------------------- */
-/* Footer               */
-/* -------------------- */
-
-footer {
-    background-color: #3D0E12;
-    color: #A7CADF;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-    font-size: 18px;
-}
-
-.mini-footer {
-    background-color: #A7CADF;
-    color: #180808;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 16px;
 }

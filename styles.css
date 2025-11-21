@@ -16,8 +16,15 @@ p {
 
 /* Page background */
 body {
-    background-color: #180808;
+    background-color: #000000; /* changed from #180808 to black */
     margin: 0;
+    color: #A7CADF; /* keeps your text visible */
+}
+
+header {
+    background-color: #180808; /* matches body */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Header tagline bar */
@@ -69,3 +76,4 @@ footer {
     text-align: center;
     padding: 8px 0;
 }
+

@@ -38,6 +38,7 @@ header p {
 /* Global Navigation */
 nav {
     background-color: #4F0208;
+    padding: 20px 0; /* increased from default to make the bar thicker */
 }
 
 nav ul {
@@ -52,7 +53,7 @@ nav ul {
 nav a {
     color: #A7CADF;
     text-decoration: none;
-    padding: 15px;
+    padding: 18px 20px; /* increases clickable area too */
     font-weight: bold;
 }
 

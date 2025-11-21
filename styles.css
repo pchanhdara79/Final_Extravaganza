@@ -1,0 +1,10 @@
+body {
+    font-family: "your-adobe-font-name", sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    color: #A7CADF;
+    font-size: 3rem; /* adjust as needed */
+    margin: 20px 0;
+}

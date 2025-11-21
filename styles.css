@@ -37,8 +37,8 @@ header p {
 
 /* Global Navigation */
 nav {
-    background-color: #4F0208;
-    padding: 20px 0; /* increased from default to make the bar thicker */
+    background-color: #3D0E12; /* updated from #4F0208 to #3D0E12 */
+    padding: 20px 0; /* keeps nav bar thicker */
 }
 
 nav ul {
@@ -59,7 +59,7 @@ nav a {
 
 nav a:hover {
     background-color: #EEBCC2;
-    color: #180808;
+    color: #000000;
 }
 
 /* Footer */

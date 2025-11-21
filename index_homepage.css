@@ -1,25 +1,29 @@
 /* HOMEPAGE-ONLY STYLES: index_homepage.css */
 
 /* Center main heading */
+/* Treasure Trove header using Sloop Script One Bold */
 header h1 {
+    font-family: "sloop-script-one", sans-serif;
+    font-weight: 700; 
+    font-style: normal; 
+    color: #0E2D30;
     text-align: center;
-    font-size: 48px;
-    color: #A7CADF;
-    margin-top: 20px;
+    font-size: 75px; /* increase this value as desired */
+    margin-top: 20px; /* keeps original spacing */
 }
 
 /* Hero Section */
 .hero {
     width: 100%;
     height: 350px;
-    background-color: #3D0E12;
+    background-color: #3D0E12; /* deep purple */
     margin: 20px 0 0 0;
 }
 
 /* Tagline bar under hero */
 h2 {
-    background-color: #A7CADF;
-    color: #3D0E12;
+    background-color: #A7CADF; /* Treasure Trove blue */
+    color: #0E2D30; /* dark tagline text */
     text-align: center;
     margin: 0;
     padding: 12px 0;
@@ -30,9 +34,9 @@ h2 {
 
 /* Featured + Latest headings flush to left with outline */
 h3 {
-    color: #A7CADF;
+    color: #180808;
     text-align: left;
-    border: 2px solid #A7CADF;
+    border: 2px solid #180808;
     padding: 8px 12px;
     width: fit-content;
     margin: 40px 0 0 0;
@@ -65,7 +69,7 @@ h3 {
 /* Cards */
 .card {
     border: 4px solid #A7CADF;
-    background-color: #180808;
+    background-color: #180808; /* keeps cards dark for contrast */
     border-radius: 10px;
     width: 280px;
     height: 280px;

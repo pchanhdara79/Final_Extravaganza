@@ -3,42 +3,51 @@
 /* Adobe font for headers */
 h1, h2, h3, h4, h5, h6 {
     font-family: "ratio-modern", serif;
-    color: #A7CADF;
+    color: #0E2D30; /* Treasure Trove header color */
 }
 
-/* Garamond for paragraphs → switch to Baskerville */
+/* Baskerville for paragraphs */
 p {
     font-family: baskerville, serif;
-    color: #A7CADF;
-    font-size: 16px; /* or whatever you were using */
+    color: #0E2D30; /* dark text for readability on light background */
+    font-size: 16px;
     line-height: 1.6;
 }
 
 /* Page background */
 body {
-    background-color: #000000; /* changed from #180808 to black */
+    background-color: #f7f4f3; /* soft cream background */
     margin: 0;
-    color: #A7CADF; /* keeps your text visible */
+    color: #0E2D30;
 }
 
+/* Header */
 header {
-    background-color: #000000; /* matches page background */
+    background-color: #f7f4f3; /* Treasure Trove background */
     padding-top: 20px;
-    padding-bottom: 20px;
+}
+
+/* Apply Sloop Script to Treasure Trove header */
+header h1 {
+    font-family: "sloop-script", serif; /* make sure the name matches the one Adobe Fonts uses */
+    color: #0E2D30; /* your chosen Treasure Trove text color */
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
 }
 
 /* Header tagline bar */
 header p {
-    background-color: #A7CADF;
-    color: #180808;
+    background-color: #A7CADF; /* Treasure Trove blue */
+    color: #0E2D30; /* tagline text dark */
     text-align: center;
     padding: 10px 0;
 }
 
 /* Global Navigation */
 nav {
-    background-color: #3D0E12; /* updated from #4F0208 to #3D0E12 */
-    padding: 20px 0; /* keeps nav bar thicker */
+    background-color: #3D0E12;
+    padding: 20px 0;
 }
 
 nav ul {
@@ -53,7 +62,7 @@ nav ul {
 nav a {
     color: #A7CADF;
     text-decoration: none;
-    padding: 18px 20px; /* increases clickable area too */
+    padding: 18px 20px;
     font-weight: bold;
 }
 
@@ -71,10 +80,14 @@ footer {
     margin-top: 60px;
 }
 
+/* Footer paragraphs in light blue */
+footer p {
+    color: #A7CADF; /* Treasure Trove blue */
+}
+
 .mini-footer {
-    background-color: #A7CADF;
-    color: #180808;
+    background-color: #A7CADF; /* matches tagline bar */
+    color: #0E2D30;
     text-align: center;
     padding: 8px 0;
 }
-

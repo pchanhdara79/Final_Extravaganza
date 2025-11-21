@@ -2,29 +2,46 @@
    HOMEPAGE-ONLY STYLES: index_homepage.css
 ========================= */
 
-/* Hero Section */
+/* ========================
+   Hero & Tagline
+========================= */
+
+/* Treasure Trove main heading using Sloop Script One Bold */
+header h1 {
+    font-family: "sloop-script-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px; /* larger font without affecting margins */
+    color: #0E2D30;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Hero image section */
 .hero {
-    width: 100%;
+    width: 100%; /* full-width section */
     height: 350px;
-    background-color: #3D0E12; /* deep purple */
+    background-color: #3D0E12; /* deep purple placeholder */
     margin: 20px 0 0 0;
 }
 
-/* Tagline bar under hero */
+/* Tagline under hero */
 h2 {
-    background-color: #A7CADF; /* Treasure Trove blue */
-    color: #0E2D30; /* dark tagline text */
+    background-color: #A7CADF; /* light blue full-width */
+    color: #0E2D30;
     text-align: center;
     margin: 0;
     padding: 12px 0;
-    display: block;
-    width: 100%;
     font-style: italic;
 }
 
-/* Featured + Latest headings flush to left with outline */
+/* ========================
+   Headings for Grids
+========================= */
+
+/* Featured + Latest section headings */
 h3 {
-    color: #180808;
+    color: #180808; /* dark red for headings */
     text-align: left;
     border: 2px solid #180808;
     padding: 8px 12px;
@@ -32,6 +49,10 @@ h3 {
     margin: 40px 0 0 0;
     border-radius: 6px;
 }
+
+/* ========================
+   Content Grids
+========================= */
 
 /* Featured Categories Grid - centered */
 .featured-grid {
@@ -42,6 +63,9 @@ h3 {
     width: 100%;
     margin: 20px 0;
     box-sizing: border-box;
+    background-color: #A7CADF; /* light blue behind cards */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* Latest Addition Grid - left-aligned */
@@ -53,13 +77,19 @@ h3 {
     width: 100%;
     margin: 20px 0;
     box-sizing: border-box;
-    padding-left: 12px;
+    padding: 20px;
+    background-color: #A7CADF; /* light blue behind cards */
+    border-radius: 10px;
 }
 
-/* Cards */
+/* ========================
+   Cards
+========================= */
+
+/* Individual card styling */
 .card {
-    border: 4px solid #A7CADF;
-    background-color: #180808; /* keeps cards dark for contrast */
+    border: 4px solid #180808;
+    background-color: #180808;
     border-radius: 10px;
     width: 280px;
     height: 280px;
@@ -72,11 +102,13 @@ h3 {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Hover effect for cards */
 .card:hover {
     transform: scale(1.06);
     box-shadow: 0 0 12px #EEBCC2;
 }
 
+/* Anchor inside cards */
 .card a {
     color: #A7CADF;
     text-decoration: none;
@@ -87,7 +119,7 @@ h3 {
     height: 100%;
 }
 
-/* Explore Works */
+/* Explore Works link */
 h4 {
     text-align: right;
     margin-right: 5%;
@@ -99,7 +131,7 @@ h4 {
    RESPONSIVE LAYOUT
 ========================= */
 
-/* Adjust card size and grid on medium screens */
+/* Medium screens */
 @media (max-width: 1100px) {
     .card {
         width: 220px;
@@ -113,7 +145,7 @@ h4 {
     }
 }
 
-/* Stack cards vertically on small screens */
+/* Small screens */
 @media (max-width: 700px) {
     .card {
         width: 180px;

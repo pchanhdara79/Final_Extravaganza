@@ -16,9 +16,19 @@ p {
 
 /* Page background */
 body {
-    background-color: #f7f4f3; /* soft cream background */
+    background-color: #3D0E12; /* deep purple edges */
     margin: 0;
     color: #0E2D30;
+}
+
+/* Center the page content */
+.page-container {
+    max-width: 1200px; /* controls the width of your content */
+    margin: 0 auto;    /* centers content horizontally */
+    background-color: #f7f4f3; /* main page background */
+    /* optional padding inside the content */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Header */

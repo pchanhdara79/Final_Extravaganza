@@ -6,10 +6,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #A7CADF;
 }
 
-/* Garamond for paragraphs */
+/* Garamond for paragraphs → switch to Baskerville */
 p {
-    font-family: garamond, serif;
+    font-family: baskerville, serif;
     color: #A7CADF;
+    font-size: 16px; /* or whatever you were using */
+    line-height: 1.6;
 }
 
 /* Page background */

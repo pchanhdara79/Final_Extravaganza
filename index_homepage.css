@@ -11,7 +11,8 @@
 }
 
 /* Tagline bar under hero */
-h2 {
+h2 { 
+    font-family: "sloop-script-one", sans-serif; /* matches header */
     background-color: #A7CADF; /* Treasure Trove blue */
     color: #0E2D30; /* dark tagline text */
     text-align: center;

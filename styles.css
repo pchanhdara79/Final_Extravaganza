@@ -88,7 +88,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #EEBCC2;
+    background-color: #A7CADF;
     color: #000000;
 }
 
@@ -110,4 +110,49 @@ footer p {
     color: #0E2D30;
     text-align: center;
     padding: 8px 0;
+}
+
+/* ========== DROPDOWN MENU SYSTEM ========== */
+
+nav ul.nav-menu {
+    position: relative;
+}
+
+/* Each top-level <li> */
+nav ul.nav-menu > li {
+    position: relative;
+}
+
+/* Base dropdown container (hidden by default) */
+nav ul.nav-menu li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #3D0E12; /* same as your nav bar */
+    padding: 10px 0;
+    list-style: none;
+    min-width: 180px;
+    border: 1px solid #A7CADF;
+    z-index: 999;
+}
+
+/* Show menu on hover */
+nav ul.nav-menu li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Each dropdown item */
+nav ul.nav-menu li .dropdown-menu li a {
+    display: block;
+    padding: 10px 18px;
+    color: #A7CADF;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+/* Hover effect inside dropdown */
+nav ul.nav-menu li .dropdown-menu li a:hover {
+    background-color: #EEBCC2;
+    color: #000;
 }

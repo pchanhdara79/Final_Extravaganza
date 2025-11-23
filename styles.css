@@ -19,7 +19,7 @@ p {
 /* Page background */
 body {
     background-image: 
-        linear-gradient(rgba(61, 14, 18, 0.95), rgba(61, 14, 18, 0.95)),
+        linear-gradient(rgba(24, 8, 8, 0.85), rgba(24, 8, 8, 0.85)), /* deeper red-brown */
         url("0_images/grid_texture.jpg");
     background-size: cover;     /* fills screen */
     background-attachment: fixed;

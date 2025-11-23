@@ -18,9 +18,17 @@ p {
 
 /* Page background */
 body {
-    background-color: #3D0E12; /* deep purple edges */
+    background-image: 
+        linear-gradient(rgba(61, 14, 18, 0.75), rgba(61, 14, 18, 0.75)),
+        url("0_images/background_texture.jpg");
+    background-size: cover;     /* fills screen */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-blend-mode: multiply;
+
     margin: 0;
-    color: #0E2D30;
 }
 
 /* Center the page content */

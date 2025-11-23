@@ -33,11 +33,9 @@ body {
 
 /* Center the page content */
 .page-container {
-    max-width: 1200px; /* controls the width of your content */
-    margin: 0 auto;    /* centers content horizontally */
-    background-color: #f7f4f3; /* main page background (creme) */
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1200px;
+    margin: 0 auto;    /* centers content */
+    background-color: #f7f4f3;
 }
 
 /* Header */
@@ -77,6 +75,9 @@ header p {
 nav {
     background-color: #3D0E12; /* full-width nav */
     padding: 20px 0;
+    width: 100%;
+    border-radius: 0;
+    box-sizing: border-box; /* includes padding in width */
 }
 
 nav ul {
@@ -105,6 +106,8 @@ footer {
     background-color: #3D0E12; /* full-width footer */
     text-align: center;
     padding: 20px 0;
+    border-radius: 0;
+    box-sizing: border-box;
     margin-top: 60px;
 }
 

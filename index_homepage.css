@@ -159,6 +159,20 @@ h4 {
     color: #A7CADF;
 }
 
+.project-text {
+    font-size: 16px;
+    line-height: 27px;
+    color: #180808;
+    max-width: 65ch;
+    margin-bottom: 24px;
+}
+
+.project-text .series {
+    font-weight: 700;
+    color: #180808;
+    text-shadow: 0 0 6px #ffb6c9;
+}
+
 /* ========================
    RESPONSIVE LAYOUT
 ========================= */

@@ -1,13 +1,92 @@
-/* Hero Section for purpose.html */
+/* =============================
+      PURPOSE PAGE STYLES
+============================= */
+
+/* Hero Section — same style as homepage */
 .hero {
     width: 100%;
     height: 350px;
-    background-image: url("../0_images/homepage/heroimg.png"); /* same as homepage */
+    background-image: url("../0_images/homepage/heroimg.png");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     margin: 20px 0 0 0;
-
-    background-color: rgba(61, 14, 18, 0.75); /* same color overlay */
+    background-color: rgba(61, 14, 18, 0.75);
     background-blend-mode: multiply;
+}
+
+/* Section Heading (matches homepage <h3>) */
+.purpose-heading {
+    color: #A7CADF;
+    text-align: left;
+    border: 2px solid #180808;
+    padding: 8px 12px;
+    width: fit-content;
+    margin: 40px auto 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #3D0E12;
+}
+
+/* Main vertical container (like latest-wrapper center alignment) */
+.purpose-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+/* Each card container — similar to homepage card proportions */
+.purpose-card {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image inside each card */
+.purpose-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;           /* preserve original image ratio */
+    object-fit: contain;             /* no cropping, no zooming */
+    background-color: #180808;       /* fill behind letterboxing */
+    border-radius: 12px;
+    border: 4px solid #A7CADF;
+    box-shadow: 0 0 12px #EEBCC2;
+    display: block;
+}
+
+/* Caption under image — styled like homepage text elements */
+.purpose-caption {
+    font-family: baskerville, serif;
+    color: #180808;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ---------- Responsive Layout (matching homepage breakpoints) ---------- */
+
+@media (max-width: 1100px) {
+    .purpose-card {
+        width: 520px;  /* slightly smaller */
+    }
+}
+
+@media (max-width: 900px) {
+    .purpose-card {
+        width: 420px;
+    }
+}
+
+@media (max-width: 700px) {
+    .purpose-card {
+        width: 90%; /* fills screen nicely */
+    }
+    .purpose-heading {
+        margin-left: 0;     /* match homepage responsive behavior */
+        margin-right: auto;
+    }
 }

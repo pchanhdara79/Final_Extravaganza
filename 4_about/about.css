@@ -23,7 +23,7 @@
 
 /* Sidebar */
 .about-sidebar {
-    flex: 0 0 200px; /* fixed width */
+    flex: 0 0 275px; /* fixed width */
     display: flex;
     flex-direction: column;
     gap: 20px; /* spacing between sidebar cards */
@@ -32,6 +32,17 @@
 /* Sidebar "cards" matching Featured / Latest style */
 .about-sidebar li {
     list-style: none;
+}
+
+.about-text-block {
+    max-width: 700px;       /* keeps line-length readable */
+    margin: 25px auto;      /* centers it like the sidebar */
+    padding: 0 20px;        /* soft padding for smaller screens */
+    font-family: baskerville, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #180808;
+    text-align: left;       /* or center if you prefer */
 }
 
 .about-sidebar a {

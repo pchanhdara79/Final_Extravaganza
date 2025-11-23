@@ -2,95 +2,107 @@
    GLOBAL STYLES: styles.css
 ========================= */
 
+/* ---------- Fonts ---------- */
+
 /* Adobe font for headers */
 h1, h2, h3, h4, h5, h6 {
     font-family: "ratio-modern", serif;
-    color: #0E2D30; /* Treasure Trove header color */
+    color: #0E2D30;
 }
 
 /* Baskerville for paragraphs */
 p {
     font-family: baskerville, serif;
-    color: #0E2D30; /* dark text for readability on light background */
+    color: #0E2D30;
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* Page background */
+/* ---------- Page Background ---------- */
 body {
-    background-image: 
-        linear-gradient(rgba(24, 8, 8, 0.85), rgba(24, 8, 8, 0.85)), /* deeper red-brown */
-        url("0_images/grid_texture.jpg");
-    background-size: cover;     /* fills screen */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-blend-mode: multiply;
-
+    background-color: #f7f4f3; /* fallback */
     margin: 0;
 }
 
-/* Center the page content */
+/* Page Container */
 .page-container {
     max-width: 1200px;
-    margin: 0 auto;    /* centers content */
-    background-color: #f7f4f3;.page-container {
-    max-width: 1200px;
-    margin: 0 auto;       /* center the container */
-    background-color: #f7f4f3; /* fallback color */
-    
-    /* Fabric texture */
+    margin: 0 auto;
+    background-color: #f7f4f3;
+    position: relative;
     background-image: url("0_images/fabric_texture.jpg");
-    background-size: cover;       /* fills the container */
+    background-size: cover;
     background-repeat: repeat;
     background-position: center;
-
-    position: relative;    /* needed if lace is inside container */
 }
 
-}
-
-/* Header */
+/* ---------- Header ---------- */
 header {
-    background-color: #f7f4f3; /* Treasure Trove background */
+    background-color: #f7f4f3;
     padding-top: 20px;
 }
 
-/* Apply Sloop Script to Treasure Trove header */
 header h1 {
-    font-family: "sloop-script-one", sans-serif; /* Adobe font */
+    font-family: "sloop-script-one", sans-serif;
     font-weight: 700; 
     font-style: normal; 
     color: #0E2D30;
     text-align: center;
-    font-size: 85px; /* larger font without affecting margins */
-    margin-top: 20px; /* keeps original spacing */
+    font-size: 85px;
+    margin-top: 20px;
     text-shadow: 2px 2px 8px #A7CADF, -2px -2px 6px #A7CADF;
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* smooth hover transition */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Hover effect: pink color */
-header h1:hover {
-    color: #3D0E12; /* deep red */
-    text-shadow: 2px 2px 8px #A7CADF; /* keeps glow on hover */
-}
-
-/* Header tagline bar */
-header p {
-    background-color: #A7CADF; /* Treasure Trove blue */
-    color: #0E2D30; /* tagline text dark */
+/* ---------- Folder / Page Body ---------- */
+.folder_body {
+    font-family: "sloop-script-one", sans-serif;
+    padding-top: 10px;
+    color: #180808;
+    margin-bottom: 5px; /* reduced space to page_body */
+    font-size: 75px;
     text-align: center;
-    padding: 10px 0;
 }
 
-/* Global Navigation */
+.page_body {
+    padding-top: 0;
+    padding-bottom: 10px;
+    color: #180808;
+    margin-bottom: 30px; /* more space to hero image */
+    font-size: 20px;
+    text-align: center;
+}
+
+
+header h1:hover {
+    color: #3D0E12;
+    text-shadow: 2px 2px 8px #A7CADF;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #3D0E12;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+footer p, .mini-footer {
+    color: #A7CADF;
+    text-align: center;
+}
+
+.mini-footer {
+    background-color: #A7CADF;
+    padding: 8px 0;
+}
+
+/* ---------- Navigation ---------- */
 nav {
-    background-color: #3D0E12; /* full-width nav */
+    background-color: #3D0E12;
     padding: 20px 0;
     width: 100%;
-    border-radius: 0;
-    box-sizing: border-box; /* includes padding in width */
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -111,49 +123,16 @@ nav a {
 
 nav a:hover {
     background-color: #A7CADF;
-    color: #000000;
+    color: #000;
 }
 
-/* Footer */
-footer {
-    background-color: #3D0E12; /* full-width footer */
-    text-align: center;
-    padding: 20px 0;
-    border-radius: 0;
-    box-sizing: border-box;
-    margin-top: 60px;
-}
-
-/* Footer paragraphs in light blue */
-footer p {
-    color: #A7CADF; /* Treasure Trove blue */
-}
-
-.mini-footer {
-    background-color: #A7CADF; /* matches tagline bar */
-    color: #0E2D30;
-    text-align: center;
-    padding: 8px 0;
-}
-
-/* ========== DROPDOWN MENU SYSTEM ========== */
-
-nav ul.nav-menu {
-    position: relative;
-}
-
-/* Each top-level <li> */
-nav ul.nav-menu > li {
-    position: relative;
-}
-
-/* Base dropdown container (hidden by default) */
+/* ---------- Dropdown Menu ---------- */
 nav ul.nav-menu li .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
-    margin-top: 12px; /* extra spacing */
-    background-color: #3D0E12; /* same as your nav bar */
+    margin-top: 12px;
+    background-color: #3D0E12;
     padding: 10px 0;
     list-style: none;
     min-width: 140px;
@@ -161,50 +140,77 @@ nav ul.nav-menu li .dropdown-menu {
     z-index: 999;
 }
 
-/* Show menu on hover */
 nav ul.nav-menu li:hover .dropdown-menu {
     display: block;
 }
 
-/* Each dropdown item */
 nav ul.nav-menu li .dropdown-menu li a {
     display: block;
     padding: 10px 18px;
     color: #A7CADF;
     text-decoration: none;
-    white-space: nowrap;
     font-weight: normal;
 }
 
-/* Hover effect inside dropdown */
 nav ul.nav-menu li .dropdown-menu li a:hover {
     background-color: #EEBCC2;
     color: #000;
 }
 
-/* ======================
-   Responsive Navbar Pinch
-====================== */
-@media (max-width: 1100px) {
-    nav ul.nav-menu {
-        gap: 20px; /* reduce spacing between menu items */
-    }
 
-    nav a {
-        padding: 12px 16px; /* smaller padding inside links */
-        font-size: 16px; /* optional: slightly smaller text */
-    }
+/* ---------- Dropdown Menu ---------- */
+
+/* Ensure each top-level menu item can position dropdowns */
+nav ul.nav-menu > li {
+    position: relative; /* important for dropdown positioning */
+}
+
+/* Dropdown container */
+nav ul.nav-menu li .dropdown-menu {
+    display: none;          /* hide by default */
+    position: absolute;     /* position relative to parent li */
+    top: 100%;              /* directly below the parent li */
+    left: 0;                /* align to left of parent li */
+    margin-top: 5px;        /* optional spacing */
+    background-color: #3D0E12;
+    padding: 10px 0;
+    list-style: none;
+    min-width: 140px;
+    border: 1px solid #A7CADF;
+    z-index: 999;
+}
+
+/* Show on hover */
+nav ul.nav-menu li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown items */
+nav ul.nav-menu li .dropdown-menu li a {
+    display: block;
+    padding: 10px 18px;
+    color: #A7CADF;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+nav ul.nav-menu li .dropdown-menu li a:hover {
+    background-color: #EEBCC2;
+    color: #000;
+}
+
+
+/* ---------- Responsive Navigation ---------- */
+@media (max-width: 1100px) {
+    nav ul.nav-menu { gap: 20px; }
+    nav a { padding: 12px 16px; font-size: 16px; }
 }
 
 @media (max-width: 700px) {
     nav ul.nav-menu {
         flex-direction: column;
         align-items: center;
-        gap: 8px; /* even closer vertically */
+        gap: 8px;
     }
-
-    nav a {
-        padding: 10px 12px;
-        font-size: 14px;
-    }
+    nav a { padding: 10px 12px; font-size: 14px; }
 }

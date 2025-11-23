@@ -1,0 +1,13 @@
+/* Hero Section for purpose.html */
+.hero {
+    width: 100%;
+    height: 350px;
+    background-image: url("../0_images/homepage/heroimg.png"); /* same as homepage */
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: 20px 0 0 0;
+
+    background-color: rgba(61, 14, 18, 0.75); /* same color overlay */
+    background-blend-mode: multiply;
+}

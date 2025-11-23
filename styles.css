@@ -20,7 +20,16 @@ p {
 
 /* ---------- Page Background ---------- */
 body {
-    background-color: #f7f4f3; /* fallback */
+    /* dark red (#180808) overlay + grid texture */
+    background-image: 
+        linear-gradient(rgba(24, 8, 8, 0.85), rgba(24, 8, 8, 0.85)), /* #180808 overlay */
+        url("0_images/grid_texture.jpg"); /* grid texture */
+    background-size: cover;          /* fills screen */
+    background-attachment: fixed;    /* keeps it fixed */
+    background-position: center;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+
     margin: 0;
 }
 

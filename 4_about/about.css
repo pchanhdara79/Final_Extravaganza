@@ -59,6 +59,14 @@
     color: #EEBCC2;
 }
 
+/* Active sidebar link */
+.about-sidebar a.active {
+    background-color: #EEBCC2; /* pinkish highlight box */
+    color: #180808; /* same text color as sidebar background */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
 /* About section content takes remaining width */
 .about-section {
     flex: 1;

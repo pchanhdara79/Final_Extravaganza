@@ -24,29 +24,39 @@
 /* Sidebar */
 .about-sidebar {
     flex: 0 0 200px; /* fixed width */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* spacing between sidebar cards */
 }
 
-.about-sidebar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
+/* Sidebar "cards" matching Featured / Latest style */
 .about-sidebar li {
-    margin-bottom: 15px;
+    list-style: none;
 }
 
 .about-sidebar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px; /* adjust height for card-like appearance */
     text-decoration: none;
-    color: #3D0E12; /* dark red-brown */
-    font-family: "ratio-modern", serif;
-    font-weight: bold;
+    color: #A7CADF; /* card text color */
+    font-family: "baskerville", serif;
+    font-weight: 700;
     font-size: 18px;
-    transition: color 0.3s ease;
+    border: 4px solid #A7CADF;
+    background-color: #180808;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+    box-sizing: border-box;
 }
 
 .about-sidebar a:hover {
-    color: #A7CADF; /* highlight on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #EEBCC2;
+    color: #EEBCC2;
 }
 
 /* About section content takes remaining width */

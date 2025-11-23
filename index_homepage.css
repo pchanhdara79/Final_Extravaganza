@@ -61,21 +61,22 @@ h3 {
 /* Latest Addition Grid - left-aligned */
 .latest-grid {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
     width: 100%;
     margin: 20px 0;
     box-sizing: border-box;
-    padding-left: 12px;
+    padding-left: 0;
 }
 
 .latest-text-wrapper {
-    width: calc(280px * 2 + 65px); 
-    margin-top: 20px;
+    width: 320px;
+    margin: 0 auto;
     line-height: 24px;
     font-size: 16px;
     color: #A7CADF;
+    text-align: center;
 }
 
 .latest-wrapper {
@@ -83,12 +84,14 @@ h3 {
     gap: 65px;
     margin-top: 20px;
     align-items: flex-start;
-    max-width: 940px;
+    max-width: 1040px;
 }
 
 .latest-img {
-    width: 250px;
+    width: 320px;
+    height: 320px;
     border-radius: 10px;
+    flex-shrink: 0;
 }
 
 .latest-text {
@@ -159,10 +162,27 @@ h4 {
         height: 260px;
     }
 
+    .latest-text-wrapper {
+        width: 260px;
+    }
+
     .featured-grid,
     .latest-grid {
         gap: 25px;
         justify-content: center;
+    }
+}
+
+@media (max-width: 900px) { /* or whatever breakpoint works */
+    .latest-wrapper {
+        flex-direction: column; /* stack image + paragraph vertically */
+        align-items: center;    /* center them horizontally */
+        gap: 20px;              /* space between image and text */
+    }
+
+    .latest-text-wrapper {
+        width: 320px; /* same as the image, keeps alignment */
+        text-align: center;
     }
 }
 
@@ -179,6 +199,10 @@ h4 {
         align-items: center;
         gap: 20px;
         padding-left: 0;
+    }
+
+    .latest-text-wrapper {
+        width: 90%; /* nearly full width for small screens */
     }
 
     h3 {

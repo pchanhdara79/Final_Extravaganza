@@ -166,6 +166,19 @@ nav ul.nav-menu li .dropdown-menu li a:hover {
     color: #000;
 }
 
+/* ---------- Active Page Indicator ---------- */
+nav a.active {
+    background-color: #EEBCC2; /* pink to indicate active page */
+    font-weight: bold; /* optional, emphasize active page */
+    pointer-events: none; /* optional, prevents clicking the current page link */
+    color: #3D0E12;
+}
+
+/* Keep hover effect for other links */
+nav a:not(.active):hover {
+    background-color: #A7CADF;
+    color: #000;
+}
 
 /* ---------- Dropdown Menu ---------- */
 

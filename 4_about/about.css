@@ -1,17 +1,14 @@
 /* Hero Section */
-.hero {
+.about-hero {
     width: 100%;
     height: 350px;
-    background-image: url("0_images/homepage/heroimg.png");
+    background-image: url("../0_images/purpose-project/Rough.png");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     margin: 20px 0 0 0;
-
-    background-color: rgba(61, 14, 18, 0.75); /* same color, with opacity */
-    /* background-color: #A7CADF; */
+    background-color: rgba(61, 14, 18, 0.75);
     background-blend-mode: multiply;
-    margin: 20px 0 0 0;
 }
 
 /* Container for sidebar + content */

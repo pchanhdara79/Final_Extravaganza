@@ -17,7 +17,7 @@
 
 .welcome p {
     font-family: baskerville, serif;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
     color: #180808; /* dark red-brown matching your palette */
     max-width: 1000px;
@@ -78,7 +78,7 @@ h3 {
     width: 320px;
     margin: 0 auto;
     line-height: 24px;
-    font-size: 16px;
+    font-size: 20px;
     color: #A7CADF;
     text-align: center;
 }

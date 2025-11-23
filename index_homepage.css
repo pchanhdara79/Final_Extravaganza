@@ -6,7 +6,10 @@
 .hero {
     width: 100%;
     height: 350px;
-    background-color: #3D0E12; /* deep purple */
+    background-image: url("0_images/homepage/heroimg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 20px 0 0 0;
 }
 

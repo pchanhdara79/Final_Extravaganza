@@ -128,10 +128,11 @@ nav ul.nav-menu li .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
+    margin-top: 8px; /* extra spacing */
     background-color: #3D0E12; /* same as your nav bar */
     padding: 10px 0;
     list-style: none;
-    min-width: 180px;
+    min-width: 140px;
     border: 1px solid #A7CADF;
     z-index: 999;
 }

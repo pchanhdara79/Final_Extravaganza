@@ -35,7 +35,20 @@ body {
 .page-container {
     max-width: 1200px;
     margin: 0 auto;    /* centers content */
-    background-color: #f7f4f3;
+    background-color: #f7f4f3;.page-container {
+    max-width: 1200px;
+    margin: 0 auto;       /* center the container */
+    background-color: #f7f4f3; /* fallback color */
+    
+    /* Fabric texture */
+    background-image: url("0_images/fabric_texture.jpg");
+    background-size: cover;       /* fills the container */
+    background-repeat: repeat;
+    background-position: center;
+
+    position: relative;    /* needed if lace is inside container */
+}
+
 }
 
 /* Header */

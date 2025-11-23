@@ -8,8 +8,13 @@
     height: 350px;
     background-image: url("0_images/homepage/heroimg.png");
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
+    margin: 20px 0 0 0;
+
+    background-color: rgba(61, 14, 18, 0.75); /* same color, with opacity */
+    /* background-color: #A7CADF; */
+    background-blend-mode: multiply;
     margin: 20px 0 0 0;
 }
 
@@ -65,6 +70,39 @@ h3 {
     padding-left: 12px;
 }
 
+.latest-text-wrapper {
+    width: calc(280px * 2 + 65px); 
+    margin-top: 20px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #A7CADF;
+}
+
+.latest-wrapper {
+    display: flex;
+    gap: 65px;
+    margin-top: 20px;
+    align-items: flex-start;
+    max-width: 940px;
+}
+
+.latest-img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.latest-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 280px;
+}
+
+.section-center {
+    display: flex;
+    justify-content: center;
+}
+
 /* Cards */
 .card {
     border: 4px solid #A7CADF;
@@ -100,6 +138,7 @@ h3 {
     width: 100%;
     height: 100%;
 }
+
 
 /* Explore Works */
 h4 {

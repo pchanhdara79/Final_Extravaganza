@@ -1,0 +1,12 @@
+/* Section Heading (matches homepage <h3>) */
+.keychains-heading {
+    color: #A7CADF;
+    text-align: left;
+    border: 2px solid #180808;
+    padding: 8px 12px;
+    width: fit-content;
+    margin: 40px auto 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #3D0E12;
+}

@@ -11,6 +11,19 @@
     background-blend-mode: multiply;
 }
 
+/* ============================
+   UNIVERSAL ABOUT PARAGRAPH STYLE
+============================ */
+
+.about-paragraph {
+    font-family: baskerville, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #180808;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
 /* Container for sidebar + content */
 .about-container {
     display: flex;

@@ -1,4 +1,4 @@
-/* Section Heading (matches homepage <h3>) */
+/* Keychains Section Heading */
 .keychains-heading {
     color: #A7CADF;
     text-align: left;
@@ -9,4 +9,36 @@
     font-weight: bold;
     font-size: 20px;
     background-color: #3D0E12;
+}
+
+/* Make the heading clickable like a block link */
+.keychains-link {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.keychains-link:hover .keychains-heading {
+    background-color: #5A161B;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Keychains Paragraphs — match About/Bag Charms/Accessories */
+.keychains-section {
+    max-width: 600px;          /* limits width for readability */
+    margin: 0 auto;            /* centers the section */
+    padding: 0 15px;           /* soft padding */
+    box-sizing: border-box;
+    transform: translateX(-40px); /* shift left */
+}
+
+.keychains-section p {
+    font-family: baskerville, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #180808;
+    text-align: left;
+    margin-bottom: 25px;
 }

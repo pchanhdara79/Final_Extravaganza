@@ -1,5 +1,5 @@
 /* ============================
-   ACCESSORY PAGE STYLES (MATCH ABOUT)
+   ACCESSORY PAGE STYLES
 ============================ */
 
 .accessory-section {
@@ -9,42 +9,34 @@
     box-sizing: border-box;
 }
 
-/* Make paragraphs readable next to the sidebar */
-.about-container {
-    display: flex;
-    gap: 40px;
+/* Container for sidebar + content */
+.about-container { display: flex; gap: 40px; }
+
+/* Sidebar stays narrow */
+.about-sidebar { min-width: 180px; }
+
+/* Paragraphs match About style & shift left */
+.accessory-section p,
+.about-section .about-paragraph {
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    padding: 0 15px;
+    text-align: left;
+    font-family: baskerville, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #180808;
+    transform: translateX(-40px);
 }
 
-/* Sidebar stays narrow, content grows */
-.about-sidebar {
-    min-width: 180px;
-}
-
-/* -------- Responsive behavior ---------- */
+/* Responsive */
 @media (max-width: 900px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .accessory-section {
-        padding: 10px 20px;
-        max-width: 700px;
-    }
-
-    .accessory-section p {
-        text-align: left;
-    }
+    .about-container { flex-direction: column; align-items: center; text-align: center; }
+    .accessory-section { padding: 10px 20px; max-width: 700px; }
+    .accessory-section p { text-align: left; }
 }
 
 @media (max-width: 600px) {
-    .accessory-section {
-        padding: 10px;
-        max-width: 100%;
-    }
-
-    .accessory-section p {
-        font-size: 22px; /* slightly smaller but still close to About */
-    }
+    .accessory-section { padding: 10px; max-width: 100%; }
+    .accessory-section p { font-size: 18px; }
 }

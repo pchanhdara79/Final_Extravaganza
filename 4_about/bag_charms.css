@@ -1,0 +1,17 @@
+/* Bag Charms Section Paragraphs */
+.bag-charms-section {
+    max-width: 600px;           /* limits width for readability */
+    margin: 0 auto;             /* centers the section */
+    padding: 0 15px;            /* soft padding on small screens */
+    box-sizing: border-box;
+    transform: translateX(-40px); /* shift left */
+}
+
+.bag-charms-section p {
+    font-family: baskerville, serif;
+    font-size: 20px;            /* matches About & Accessories */
+    line-height: 1.8;
+    color: #180808;
+    text-align: left;
+    margin-bottom: 25px;        /* spacing between paragraphs */
+}

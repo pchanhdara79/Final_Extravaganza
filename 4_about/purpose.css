@@ -1,8 +1,4 @@
-/* =============================
-      PURPOSE PAGE STYLES
-============================= */
-
-/* Hero Section — same style as homepage */
+/* Hero Section */
 .purpose-hero {
     width: 100%;
     height: 350px;
@@ -15,7 +11,7 @@
     background-blend-mode: multiply;
 }
 
-/* Section Heading (matches homepage <h3>) */
+/* Section Heading */
 .purpose-heading {
     color: #A7CADF;
     text-align: left;
@@ -28,7 +24,25 @@
     background-color: #3D0E12;
 }
 
-/* Main vertical container (like latest-wrapper center alignment) */
+/* Purpose Paragraphs — match About/Bag Charms/Accessories/Keychains */
+.purpose-section {
+    max-width: 600px;          /* limits width for readability */
+    margin: 0 auto 25px auto;  /* centers section with spacing below */
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.purpose-section p {
+    font-family: baskerville, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #180808;
+    text-align: left;
+    margin-bottom: 25px;
+    transform: translateX(-40px);
+}
+
+/* Cards Layout */
 .purpose-grid {
     display: flex;
     flex-direction: column;
@@ -38,7 +52,6 @@
     max-width: 700px;
 }
 
-/* Each card container — similar to homepage card proportions */
 .purpose-card {
     width: 750px;
     display: flex;
@@ -46,19 +59,17 @@
     align-items: center;
 }
 
-/* Image inside each card */
 .purpose-img {
     width: 100%;
-    aspect-ratio: 16 / 10;           /* preserve original image ratio */
-    object-fit: contain;             /* no cropping, no zooming */
-    background-color: #180808;       /* fill behind letterboxing */
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    background-color: #180808;
     border-radius: 12px;
     border: 4px solid #A7CADF;
     box-shadow: 0 0 12px #EEBCC2;
     display: block;
 }
 
-/* Caption under image — styled like homepage text elements */
 .purpose-caption {
     font-family: baskerville, serif;
     color: #180808;
@@ -67,26 +78,16 @@
     text-align: center;
 }
 
-/* ---------- Responsive Layout (matching homepage breakpoints) ---------- */
-
+/* ---------- Responsive Layout ---------- */
 @media (max-width: 1100px) {
-    .purpose-card {
-        width: 520px;  /* slightly smaller */
-    }
+    .purpose-card { width: 520px; }
 }
 
 @media (max-width: 900px) {
-    .purpose-card {
-        width: 420px;
-    }
+    .purpose-card { width: 420px; }
 }
 
 @media (max-width: 700px) {
-    .purpose-card {
-        width: 90%; /* fills screen nicely */
-    }
-    .purpose-heading {
-        margin-left: 0;     /* match homepage responsive behavior */
-        margin-right: auto;
-    }
+    .purpose-card { width: 90%; }
+    .purpose-heading { margin-left: 0; margin-right: auto; }
 }

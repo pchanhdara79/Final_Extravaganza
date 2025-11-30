@@ -39,7 +39,7 @@
     font-size: 30px;
 }
 
-/* Featured + Grid heading flush to left with outline */
+/* Featured + Grid heading */
 .works-h3 {
     color: #A7CADF;
     text-align: left;
@@ -52,37 +52,30 @@
     background-color: #3D0E12;
 }
 
-/* Featured / Works Grid */
+/* ----------- GRID LAYOUT (ALWAYS 3 columns × flexible rows) ----------- */
 .works-featured-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* always 3 columns */
     gap: 40px;
-    flex-wrap: wrap;
     width: 100%;
-    margin: 20px 0;
+    max-width: 1100px;
+    margin: 40px auto;
     box-sizing: border-box;
+    place-items: center;
 }
 
-/* Section center wrapper */
-.works-section-center {
-    display: flex;
-    justify-content: center;
-}
-
-/* Cards */
+/* Smaller cards */
 .works-card {
-    border: 4px solid #A7CADF;
+    width: 300px; /* smaller! */
     background-color: #180808;
-    border-radius: 10px;
-    width: 320px;
-    height: 320px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #A7CADF;
-    text-align: center;
+    border-radius: 12px;
+    border: 4px solid #A7CADF;
+    overflow: hidden;
     cursor: pointer;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .works-card:hover {
@@ -90,44 +83,42 @@
     box-shadow: 0 0 12px #EEBCC2;
 }
 
-.works-card a {
-    color: #A7CADF;
-    text-decoration: none;
-    font-family: "sloop-script-one", serif;
-    font-size: 34px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Images scale naturally */
+.works-card img {
     width: 100%;
-    height: 100%;
-}
-
-.works-card a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    height: auto;
     display: block;
 }
 
-/* Explore Works */
-.works-h4 {
-    text-align: right;
-    margin-right: 5%;
-    font-style: italic;
+/* Caption */
+.works-card p {
+    padding: 10px 0;
+    font-size: 16px;
     color: #A7CADF;
+    font-family: baskerville, serif;
+    text-align: center;
 }
 
 /* ---------- Responsive Layout ---------- */
-@media (max-width: 1100px) {
-    .works-card { width: 260px; height: 260px; }
-    .works-featured-grid { gap: 25px; justify-content: center; }
+/* ONLY shrink cards, NOT columns */
+@media (max-width: 1000px) {
+    .works-card { width: 260px; }
 }
 
-@media (max-width: 700px) {
-    .works-card { width: 200px; height: 200px; }
-    .works-featured-grid { flex-direction: column; align-items: center; gap: 20px; padding-left: 0; }
-    .works-h3 { margin-left: 0; }
-    .works-h4 { text-align: center; margin-right: 0; }
+@media (max-width: 800px) {
+    .works-card { width: 220px; }
+    .works-featured-grid { gap: 30px; }
+}
+
+@media (max-width: 650px) {
+    .works-card { width: 190px; }
+}
+
+@media (max-width: 550px) {
+    .works-card { width: 170px; }
+}
+
+@media (max-width: 460px) {
+    .works-card { width: 150px; }
+    .works-featured-grid { gap: 20px; }
 }

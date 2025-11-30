@@ -15,3 +15,67 @@
     text-align: left;
     margin-bottom: 25px;        /* spacing between paragraphs */
 }
+
+/* Responsive layout for container + sidebar */
+@media (max-width: 900px) {
+    .bag-charms-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bag-charms-sidebar {
+        flex: 1 1 auto;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .bag-charms-sidebar a {
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+/* FIX SIDEBAR LAYOUT ON SMALL SCREENS */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* Sidebar stays a fixed width */
+.about-sidebar {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+/* Text area expands normally */
+.bag-charms-section,
+.keychains-section {
+    flex: 1;
+}
+
+/* --- RESPONSIVE FIX --- */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .about-sidebar li a {
+        padding: 6px 10px;
+        display: inline-block;
+    }
+}

@@ -23,7 +23,7 @@ body {
     /* dark red (#180808) overlay + grid texture */
     background-image: 
         linear-gradient(rgba(24, 8, 8, 0.85), rgba(24, 8, 8, 0.85)), /* #180808 overlay */
-        url("0_images/grid_texture.jpg"); /* grid texture */
+        url("0_images/homepage/home3.jpg"); /* changed to leaf texture */
     background-size: cover;          /* fills screen */
     background-attachment: fixed;    /* keeps it fixed */
     background-position: center;
@@ -39,8 +39,9 @@ body {
     margin: 0 auto;
     background-color: #f7f4f3;
     position: relative;
-    background-image: url("0_images/fabric_texture.jpg");
+    background-image: url("0_images/grid_texture.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
 }
@@ -50,6 +51,12 @@ header {
     background-color: #f7f4f3;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-image: url("0_images/grid_texture.jpg");
+    background-size: cover;          /* fills screen */
+    background-attachment: fixed;    /* keeps it fixed */
+    background-position: center;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
 }
 
 header h1 {

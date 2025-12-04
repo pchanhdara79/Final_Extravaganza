@@ -37,14 +37,19 @@ body {
 .page-container {
     max-width: 1250px;
     margin: 0 auto;
-    background-color: #f7f4f3;
     position: relative;
+
     background-image: url("0_images/grid_texture.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
+
+    /* Add a white overlay to lighten it */
+    background-color: rgba(255, 255, 255, 0.6); 
+    background-blend-mode: lighten; /* or overlay, screen, soft-light */
 }
+
 
 /* ---------- Header ---------- */
 header {

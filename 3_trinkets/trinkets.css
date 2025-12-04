@@ -16,7 +16,7 @@
     font-size: 20px;
     line-height: 1.8;
     color: #180808;
-    max-width: 600px;
+    max-width: 750px;
     padding: 0 15px;
     text-align: left;
     margin: 0 auto 25px auto;
@@ -101,7 +101,7 @@
 
 .trinkets-section {
     padding: 20px 40px;
-    max-width: 900px;
+    max-width: 1750px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -165,3 +165,52 @@
     transform: none;
     text-align: left;
 }
+
+/* Full-width centered content container (for Tama + Gacha) */
+.trinkets-full-section {
+    max-width: 900px;    /* or 1000px if you want wider */
+    margin: 60px auto;   
+    padding: 0 20px;
+}
+
+/* Headings inside full-width sections */
+.trinkets-full-heading {
+    color: #A7CADF;
+    background-color: #3D0E12;
+    border: 2px solid #180808;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 18px 16px;
+    margin: 0 auto 25px auto; /* center the heading */
+}
+
+/* Side-by-side images for intro only */
+.trinkets-images-intro {
+    display: flex;
+    gap: 20px;                  /* space between images */
+    justify-content: center;     /* center horizontally */
+    flex-wrap: wrap;             /* wrap on smaller screens */
+}
+
+.trinkets-images-intro .trinkets-card {
+    flex: 1 1 300px;             /* flexible width, min 300px */
+    max-width: 350px;            /* optional cap */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trinkets-images-intro .trinkets-card img {
+    width: 100%;                 /* fill card */
+    height: auto;                /* maintain aspect ratio */
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trinkets-images-intro .trinkets-card img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #EEBCC2;
+}
+

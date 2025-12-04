@@ -114,7 +114,7 @@
 .squishies-images {
     display: flex;
     flex-direction: column;     /* vertical stack */
-    gap: 25px;                  /* space between images */
+    gap: 40px;                  /* space between images */
     max-width: 600px;           /* same width as paragraphs */
     margin: 0 auto;             /* center */
 }
@@ -136,6 +136,13 @@
 .squishies-card img:hover {
     transform: scale(1.03);
     box-shadow: 0 0 15px #EEBCC2;
+}
+
+.squishies-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;  /* space between horizontal images */
 }
 
 /* Responsive scaling */

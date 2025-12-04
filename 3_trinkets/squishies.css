@@ -16,11 +16,11 @@
     font-size: 20px;
     line-height: 1.8;
     color: #180808;
-    max-width: 600px;
+    max-width: 750px;
     padding: 0 15px;
     text-align: left;
     margin: 0 auto 25px auto;
-    transform: translateX(-40px);
+    transform: translateX(-40px); /* shift left */
 }
 
 /* Container for sidebar + content */
@@ -30,7 +30,7 @@
     margin-top: 20px;
 }
 
-/* Jewelry Section Heading */
+/* Section Heading */
 .squishies-heading {
     color: #A7CADF;
     text-align: right;
@@ -101,7 +101,7 @@
 
 .squishies-section {
     padding: 20px 40px;
-    max-width: 900px;
+    max-width: 1750px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -113,48 +113,24 @@
 /* Wrapper for all images */
 .squishies-images {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin: 40px auto;
-    width: 100%;
+    flex-direction: column;     /* vertical stack */
+    gap: 25px;                  /* space between images */
+    max-width: 600px;           /* same width as paragraphs */
+    margin: 0 auto;             /* center */
 }
 
-/* Card wrapper (controls size, responsive) */
+/* Each image card */
 .squishies-card {
     width: 100%;
-    max-width: 545px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.squishies-caption {
-    text-align: center;
-    font-size: 0.85rem;
-    margin-top: 6px;
-    font-family: "adobe-caslon-pro", serif;
-    color: #555;
-    line-height: 1.3;
-}
-
-/* Rectangle 3:4 */
-.squishies-rect {
-    aspect-ratio: 3 / 4;
-}
-
-/* Square 1:1 */
-.squishies-square {
-    aspect-ratio: 1 / 1;
-}
-
-/* Image styling */
+/* Image inside card */
 .squishies-card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 4px solid #A7CADF;
-    background-color: #180808;
-    padding: 6px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: auto;
+    display: block;
 }
 
 .squishies-card img:hover {
@@ -171,7 +147,7 @@
 
 @media (max-width: 600px) {
     .squishies-card {
-        max-width: 225px;
+        max-width: 2250px;
     }
 }
 
@@ -179,36 +155,57 @@
 .squishies-content-block {
     width: 100%;
     max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto; /* centers the whole block */
+    text-align: left; /* centers images, not paragraphs */
 }
 
-/* Remove left shift inside content block only */
+/* Remove the left shift ONLY inside content block */
 .squishies-content-block .squishies-paragraph {
     transform: none;
     text-align: left;
 }
 
-/* A simple responsive row */
-.squishies-row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 40px auto;
-    flex-wrap: wrap; /* Allows stacking on small screens */
+/* Full-width centered content container */
+.squishies-full-section {
+    max-width: 900px;
+    margin: 60px auto;   
+    padding: 0 20px;
 }
 
-/* Force two items to sit side by side on large screens */
-.squishies-row .squishies-card {
-    flex: 0 0 calc(50% - 30px); /* two per row */
+/* Headings inside full-width sections */
+.squishies-full-heading {
+    color: #A7CADF;
+    background-color: #3D0E12;
+    border: 2px solid #180808;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 18px 16px;
+    margin: 0 auto 25px auto; /* center the heading */
 }
 
-/* Stack vertically when the page is narrow */
-@media (max-width: 900px) {
-    .squishies-row .squishies-card {
-        flex: 0 0 100%; /* full width on smaller screens */
-        max-width: 400px;
-        margin: 0 auto;
-    }
+.squishies-credits {
+    list-style: none;           /* removes bullets */
+    text-align: right;          /* aligns the list to the right */
+    padding: 0;                 /* remove default ul padding */
+    margin: 0 0 25px 0;         /* spacing below heading */
+}
+
+.squishies-credits li {
+    display: inline;            /* display items in a row */
+    margin-left: 15px;          /* spacing between links */
+}
+
+.squishies-credits li:first-child {
+    margin-left: 0;             /* no extra space before first link */
+}
+
+.squishies-credits a {
+    color: #A7CADF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.squishies-credits a:hover {
+    color: #EEBCC2;
 }

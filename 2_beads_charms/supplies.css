@@ -1,8 +1,8 @@
 /* Hero Section */
-.beads-hero {
+.supplies-hero {
     width: 100%;
     height: 450px;
-    background-image: url("../0_images/homepage/beads_charms.jpg");
+    background-image: url("../0_images/beads/supplies_home.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 }
 
 /* Universal paragraph style */
-.beads-paragraph {
+.supplies-paragraph {
     font-family: baskerville, serif;
     font-size: 20px;
     line-height: 1.8;
@@ -20,18 +20,18 @@
     padding: 0 15px;
     text-align: left;
     margin: 0 auto 25px auto;
-    transform: translateX(-40px); /* shift left */
+    transform: translateX(-40px);
 }
 
 /* Container for sidebar + content */
-.beads-container {
+.supplies-container {
     display: flex;
     gap: 40px;
     margin-top: 20px;
 }
 
 /* Section Heading */
-.beads-heading {
+.supplies-heading {
     color: #A7CADF;
     text-align: right;
     border: 2px solid #180808;
@@ -44,7 +44,7 @@
 }
 
 /* Sidebar */
-.beads-sidebar {
+.supplies-sidebar {
     flex: 0 0 275px;
     display: flex;
     flex-direction: column;
@@ -52,9 +52,9 @@
     margin-left: 15px;
 }
 
-.beads-sidebar li { list-style: none; }
+.supplies-sidebar li { list-style: none; }
 
-.beads-text-block {
+.supplies-text-block {
     max-width: 700px;
     margin: 25px auto;
     padding: 0 20px;
@@ -67,7 +67,7 @@
 }
 
 /* Sidebar links */
-.beads-sidebar a {
+.supplies-sidebar a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,101 +86,90 @@
     box-sizing: border-box;
 }
 
-.beads-sidebar a:hover {
+.supplies-sidebar a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 12px #EEBCC2;
     color: #EEBCC2;
 }
 
-.beads-sidebar a.active {
+.supplies-sidebar a.active {
     background-color: #EEBCC2;
     color: #180808;
     border-radius: 5px;
     padding: 5px 10px;
 }
 
-.beads-section {
+.supplies-section {
     padding: 20px 40px;
     max-width: 1750px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-/* ============================================================
-   IMAGE SYSTEM — CENTERED, RESPONSIVE, 3:4 & 1:1 RATIOS
-============================================================ */
-
-/* Wrapper for all images */
-.beads-images {
+/* IMAGE SYSTEM — CENTERED, RESPONSIVE */
+.supplies-images {
     display: flex;
-    flex-direction: column;     /* vertical stack */
-    gap: 40px;                  /* space between images */
-    max-width: 600px;           /* same width as paragraphs */
-    margin: 0 auto;             /* center */
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Each image card */
-.beads-card {
+.supplies-card {
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
 
-/* Image inside card */
-.beads-card img {
+.supplies-card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.beads-card img:hover {
+.supplies-card img:hover {
     transform: scale(1.03);
     box-shadow: 0 0 15px #EEBCC2;
 }
 
-.beads-row {
+.supplies-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;  /* space between horizontal images */
+    gap: 30px;
 }
 
 /* Responsive scaling */
 @media (max-width: 1000px) {
-    .beads-card {
-        max-width: 345px;
-    }
+    .supplies-card { max-width: 345px; }
 }
 
 @media (max-width: 600px) {
-    .beads-card {
-        max-width: 2250px;
-    }
+    .supplies-card { max-width: 2250px; }
 }
 
-/* Centers paragraph + images as one unit */
-.beads-content-block {
+/* Content block */
+.supplies-content-block {
     width: 100%;
     max-width: 700px;
-    margin: 0 auto; /* centers the whole block */
-    text-align: left; /* centers images, not paragraphs */
+    margin: 0 auto;
+    text-align: left;
 }
 
-/* Remove the left shift ONLY inside content block */
-.beads-content-block .beads-paragraph {
+.supplies-content-block .supplies-paragraph {
     transform: none;
     text-align: left;
 }
 
 /* Full-width centered content container */
-.beads-full-section {
+.supplies-full-section {
     max-width: 900px;
     margin: 60px auto;   
     padding: 0 20px;
 }
 
 /* Headings inside full-width sections */
-.beads-full-heading {
+.supplies-full-heading {
     color: #A7CADF;
     background-color: #3D0E12;
     border: 2px solid #180808;
@@ -188,31 +177,115 @@
     font-weight: bold;
     font-size: 22px;
     padding: 10px 18px 16px;
-    margin: 0 auto 25px auto; /* center the heading */
+    margin: 0 auto 25px auto;
 }
 
-.beads-credits {
+.supplies-credits {
     list-style: none;
     text-align: right;
     padding: 0;
     margin: 0 0 25px 0;
 }
 
-.beads-credits li {
+.supplies-credits li {
     display: inline;
     margin-left: 15px;
 }
 
-.beads-credits li:first-child {
+.supplies-credits li:first-child {
     margin-left: 0;
 }
 
-.beads-credits a {
+.supplies-credits a {
     color: #A7CADF;
     text-decoration: none;
     font-weight: 700;
 }
 
-.beads-credits a:hover {
+.supplies-credits a:hover {
     color: #EEBCC2;
 }
+
+/* 3×3 Grid Layout */
+.supplies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.supplies-grid-item {
+    text-align: center;
+    font-family: baskerville, serif;
+}
+
+.supplies-grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.supplies-grid-item img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #EEBCC2;
+}
+
+.supplies-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #180808;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .supplies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .supplies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.supplies-center-img {
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+.supplies-center-img img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.supplies-list {
+    font-family: baskerville, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #180808;
+
+    max-width: 750px;
+    margin: 0 auto 25px auto;
+
+    /* Two column layout */
+    columns: 2;
+    column-gap: 40px;
+
+    /* Center the entire block */
+    text-align: left;
+
+    /* Match paragraph shift */
+    transform: translateX(-40px);
+    padding-left: 10px; /* cleaner indent */
+}
+
+.supplies-list li {
+    break-inside: avoid; /* keeps items from splitting awkwardly */
+    margin-bottom: 8px;
+}
+

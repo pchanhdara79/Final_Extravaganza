@@ -14,155 +14,256 @@
     background-blend-mode: multiply;
 }
 
-/* Welcome / Text Block */
-.works-welcome p {
+/* Universal paragraph style */
+.works-paragraph {
     font-family: baskerville, serif;
     font-size: 20px;
     line-height: 1.8;
     color: #180808;
-    max-width: 1000px;
-    margin: 25px auto;
-    text-align: center;
-}
-
-/* Tagline bar under hero */
-.works-h2 { 
-    font-family: "sloop-script-one", sans-serif;
-    background-color: #A7CADF;
-    color: #0E2D30;
-    text-align: center;
-    margin: 0;
-    padding: 12px 0;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-/* Featured + Grid heading */
-.works-h3 {
-    color: #A7CADF;
+    max-width: 750px;
+    padding: 0 15px;
     text-align: left;
+    margin: 0 auto 25px auto;
+    transform: translateX(-40px);
+}
+
+/* Container for sidebar + content */
+.works-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Section Heading */
+.works-heading {
+    color: #A7CADF;
+    text-align: right;
     border: 2px solid #180808;
-    padding: 8px 12px;
+    padding: 8px 12px 20px 12px;
     width: fit-content;
-    margin: 40px 0 0 0;
+    margin: 40px 40px 20px auto;
     font-weight: bold;
     font-size: 20px;
     background-color: #3D0E12;
 }
 
-/* ----------- GRID LAYOUT (ALWAYS 3 columns × flexible rows) ----------- */
-.works-featured-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)); /* always 3 columns */
-    gap: 40px;
-    width: 100%;
-    max-width: 1100px;
-    margin: 40px auto;
-    box-sizing: border-box;
-    place-items: center;
-}
-
-/* Smaller cards */
-.works-card {
-    width: 300px; /* smaller! */
-    background-color: #180808;
-    border-radius: 12px;
-    border: 4px solid #A7CADF;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+/* Sidebar */
+.works-sidebar {
+    flex: 0 0 275px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    margin-left: 15px;
+}
+
+.works-sidebar li { list-style: none; }
+
+.works-text-block {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 0 20px;
+    font-family: baskerville, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #180808;
+    text-align: left;
+    transform: translateX(-20px);
+}
+
+/* Sidebar links */
+.works-sidebar a {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    color: #A7CADF;
+    font-family: "baskerville", serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: 4px solid #A7CADF;
+    background-color: #180808;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+    box-sizing: border-box;
 }
 
-.works-card:hover {
-    transform: scale(1.06);
+.works-sidebar a:hover {
+    transform: scale(1.05);
     box-shadow: 0 0 12px #EEBCC2;
+    color: #EEBCC2;
 }
 
-/* Images scale naturally */
+.works-sidebar a.active {
+    background-color: #EEBCC2;
+    color: #180808;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.works-section {
+    padding: 20px 40px;
+    max-width: 1750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* IMAGE SYSTEM — CENTERED, RESPONSIVE */
+.works-images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.works-card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .works-card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Caption */
-.works-card p {
-    padding: 10px 0;
-    font-size: 16px;
-    color: #A7CADF;
-    font-family: baskerville, serif;
-    text-align: center;
+.works-card img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #EEBCC2;
 }
 
-/* ==========================================
-   SECOND GRID — 1 COLUMN STACK ON DESKTOP
-========================================== */
-
-/* Default: desktop — 1 column (stack vertically) */
-.works-all-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* single column */
-    gap: 40px;
-    width: 100%;
-    max-width: 600px; /* optional: centers the stack */
-    margin: 40px auto;
-    place-items: center;
-}
-
-.works-all-grid .works-card {
-    width: 545px;       /* full-screen width */
-    height: 545px;      /* square */
+.works-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    overflow: hidden;
+    gap: 30px;
 }
 
-.works-all-grid .works-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* cover the square without stretching */
-}
-
-/* Medium screens → 3-column layout */
-@media (max-width: 1200px) {
-    .works-all-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        max-width: 1100px; /* full grid width */
-    }
-    .works-all-grid .works-card {
-        width: 300px;     /* smaller to fit 3 columns */
-        height: auto;     /* let height adjust naturally */
-    }
-    .works-all-grid .works-card img {
-        height: auto;
-    }
-}
-
-/* ---------- Responsive Layout for all cards ---------- */
+/* Responsive scaling */
 @media (max-width: 1000px) {
-    .works-card { width: 260px; }
+    .works-card { max-width: 345px; }
 }
 
-@media (max-width: 800px) {
-    .works-card { width: 220px; }
-    .works-featured-grid, .works-all-grid { gap: 30px; }
+@media (max-width: 600px) {
+    .works-card { max-width: 2250px; }
 }
 
-@media (max-width: 650px) {
-    .works-card { width: 190px; }
+/* Content block */
+.works-content-block {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.works-content-block .works-paragraph {
+    transform: none;
+    text-align: left;
+}
+
+/* Full-width centered content container */
+.works-full-section {
+    max-width: 900px;
+    margin: 60px auto;   
+    padding: 0 20px;
+}
+
+/* Headings inside full-width sections */
+.works-full-heading {
+    color: #A7CADF;
+    background-color: #3D0E12;
+    border: 2px solid #180808;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 18px 16px;
+    margin: 0 auto 25px auto;
+}
+
+/* Credits */
+.works-credits {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.works-credits li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.works-credits li:first-child {
+    margin-left: 0;
+}
+
+.works-credits a {
+    color: #A7CADF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.works-credits a:hover {
+    color: #EEBCC2;
+}
+
+/* 3×3 Grid Layout */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.works-grid-item {
+    text-align: center;
+    font-family: baskerville, serif;
+}
+
+.works-grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.works-grid-item img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #EEBCC2;
+}
+
+.works-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #180808;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 550px) {
-    .works-card { width: 170px; }
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media (max-width: 460px) {
-    .works-card { width: 150px; }
-    .works-featured-grid, .works-all-grid { gap: 20px; }
+.works-center-img {
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+.works-center-img img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
 }

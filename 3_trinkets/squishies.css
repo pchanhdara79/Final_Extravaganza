@@ -126,11 +126,16 @@
     overflow: hidden;
 }
 
-/* Image inside card */
+/* Image styling */
 .squishies-card img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    border: none;          /* removed border */
+    background-color: none; /* removed background */
+    padding: 0;            /* removed padding */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .squishies-card img:hover {

@@ -2,7 +2,7 @@
 .keychains-hero {
     width: 100%;
     height: 450px;
-    background-image: url("../0_images/purpose-project/Rough.png");
+    background-image: url("../0_images/keychains/keychain_hero.jpg");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -16,11 +16,11 @@
     font-size: 20px;
     line-height: 1.8;
     color: #180808;
-    max-width: 600px;
+    max-width: 750px;
     padding: 0 15px;
     text-align: left;
     margin: 0 auto 25px auto;
-    transform: translateX(-40px); /* shift left */
+    transform: translateX(-40px);
 }
 
 /* Container for sidebar + content */
@@ -30,16 +30,28 @@
     margin-top: 20px;
 }
 
+/* Section Heading */
+.keychains-heading {
+    color: #A7CADF;
+    text-align: right;
+    border: 2px solid #180808;
+    padding: 8px 12px 20px 12px;
+    width: fit-content;
+    margin: 40px 40px 20px auto;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #3D0E12;
+}
+
 /* Sidebar */
 .keychains-sidebar {
     flex: 0 0 275px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-left: 15px; /* optional small shift right */
+    margin-left: 15px;
 }
 
-/* Sidebar "cards" */
 .keychains-sidebar li { list-style: none; }
 
 .keychains-text-block {
@@ -51,7 +63,7 @@
     line-height: 1.8;
     color: #180808;
     text-align: left;
-    transform: translateX(-20px); /* shift left */
+    transform: translateX(-20px);
 }
 
 /* Sidebar links */
@@ -89,7 +101,190 @@
 
 .keychains-section {
     padding: 20px 40px;
-    max-width: 900px;
+    max-width: 1750px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+/* IMAGE SYSTEM — CENTERED, RESPONSIVE */
+.keychains-images {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.keychains-card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.keychains-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.keychains-card img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #EEBCC2;
+}
+
+.keychains-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Responsive scaling */
+@media (max-width: 1000px) {
+    .keychains-card { max-width: 345px; }
+}
+
+@media (max-width: 600px) {
+    .keychains-card { max-width: 2250px; }
+}
+
+/* Content block */
+.keychains-content-block {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.keychains-content-block .keychains-paragraph {
+    transform: none;
+    text-align: left;
+}
+
+/* Full-width centered content container */
+.keychains-full-section {
+    max-width: 900px;
+    margin: 60px auto;   
+    padding: 0 20px;
+}
+
+/* Headings inside full-width sections */
+.keychains-full-heading {
+    color: #A7CADF;
+    background-color: #3D0E12;
+    border: 2px solid #180808;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 18px 16px;
+    margin: 0 auto 25px auto;
+}
+
+.keychains-credits {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.keychains-credits li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.keychains-credits li:first-child {
+    margin-left: 0;
+}
+
+.keychains-credits a {
+    color: #A7CADF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.keychains-credits a:hover {
+    color: #EEBCC2;
+}
+
+/* 3×3 Grid Layout */
+.keychains-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.keychains-grid-item {
+    text-align: center;
+    font-family: baskerville, serif;
+}
+
+.keychains-grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.keychains-grid-item img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #EEBCC2;
+}
+
+.keychains-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #180808;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .keychains-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .keychains-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.keychains-center-img {
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+.keychains-center-img img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.keychains-list {
+    font-family: baskerville, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #180808;
+
+    max-width: 750px;
+    margin: 0 auto 25px auto;
+
+    /* Two column layout */
+    columns: 2;
+    column-gap: 40px;
+
+    /* Center the entire block */
+    text-align: left;
+
+    /* Match paragraph shift */
+    transform: translateX(-40px);
+    padding-left: 10px;
+}
+
+.keychains-list li {
+    break-inside: avoid;
+    margin-bottom: 8px;
 }

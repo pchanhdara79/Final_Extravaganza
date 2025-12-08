@@ -267,3 +267,14 @@
     display: block;
     border-radius: 10px;
 }
+
+/* Subsection Heading (H4) */
+.cited-subheading {
+    font-family: baskerville, serif;
+    font-size: 22px;       /* Larger than 20px paragraph */
+    font-weight: 700;      /* Bold */
+    color: #180808;        /* Same paragraph color */
+    margin: 25px 0 10px 0; /* Spacing above & below */
+    text-align: left;      /* Neutral alignment */
+    font-style: italic;
+}

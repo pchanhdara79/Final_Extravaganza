@@ -267,3 +267,22 @@
     display: block;
     border-radius: 10px;
 }
+
+.works-cited-link {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.works-cited-link a {
+    font-family: baskerville, serif;
+    font-weight: bold;
+    color: #0E2D30;
+    text-decoration: underline;
+    font-size: 18px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.works-cited-link a:hover {
+    color: #EEBCC2;
+    text-shadow: 1px 1px 4px #fff;
+}

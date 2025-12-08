@@ -150,10 +150,11 @@ nav a:hover {
 
 /* ---------- Dropdown Menu ---------- */
 nav ul.nav-menu li .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    margin-top: 12px;
+    display: none;          /* hide by default */
+    position: absolute;     /* position relative to parent li */
+    top: 90%;               /* move it up closer to parent */
+    left: 0;                /* align to left of parent li */
+    margin-top: 0;          /* remove extra spacing */
     background-color: #3D0E12;
     padding: 10px 0;
     list-style: none;
